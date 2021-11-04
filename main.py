@@ -83,7 +83,7 @@ dataset['PRE_ST_SLOPE'] = [1 if x != 'Flat' else 0
 pre_processed_cols.append('PRE_ST_SLOPE')
 
 #########################################
-# Separate data to training and testing #
+# Separate data for training and testing #
 #########################################
 y = dataset['HeartDisease']  # Target
 x = dataset.loc[:, pre_processed_cols]  # Pre-processed data
