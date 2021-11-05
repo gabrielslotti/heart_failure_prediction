@@ -1,13 +1,14 @@
 <h1 align="center">
-    <a>Predição de falhas cardíacas</a>
+    <a>Predição de doenças cardiovasculares</a>
 </h1>
-<p align="center">Modelo elaborado para predição de falhas cardíacas.</p>
+<p align="center">Modelo elaborado para predição de falhas cardíacas e doenças cardiovasculares.</p>
 
 <h3>Índice</h3>
 <p align="left">
- • <a href="#description">Descrição do trabalho</a><br>
- • <a href="#dataset-desc">Dataset</a><br>
- • <a href="#attr-desc">Descrição dos atributos do dataset</a>
+ • <a href="#description">Descrição do trabalho</a></br>
+ • <a href="#dataset-desc">Dataset</a></br>
+ • <a href="#attr-desc">Descrição dos atributos do dataset</a></br>
+ • <a href="#citations">Citações</a>
 </p>
 
 <h3 id="description">Descrição do trabalho</h3>
@@ -84,3 +85,6 @@
         <td>Indica se o paciente possuí doença cardíaca [1: heart disease, 0: Normal].</td>
     </tr>
 </table>
+
+<h3 id="citations">Citações</h3>
+<p>1. fedesoriano. (September 2021). Heart Failure Prediction Dataset. Retrieved [Date Retrieved] from https://www.kaggle.com/fedesoriano/heart-failure-prediction.</p>
