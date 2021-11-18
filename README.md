@@ -8,6 +8,7 @@
  • <a href="#description">Descrição do trabalho</a></br>
  • <a href="#dataset-desc">Dataset</a></br>
  • <a href="#attr-desc">Descrição dos atributos do dataset</a></br>
+ • <a href="#pre-process">Pré-processamento</a></br>
  • <a href="#citations">Citações</a>
 </p>
 
@@ -83,6 +84,82 @@
         <td>HeartDisease</td>
         <td>Binário</td>
         <td>Indica se o paciente possuí doença cardíaca [1: heart disease, 0: Normal].</td>
+    </tr>
+</table>
+
+<h3 id="pre-process">Pré-processamento</h3>
+<table border="1">
+    <tr>
+        <td>Variável</td>
+        <td>Descrição</td>
+    </tr>
+    <tr>
+        <td>PRE_AGE</td>
+        <td>Se "Age" >= 50 então 1 senão normalização linear (max = 50, min = 28).</td>
+    </tr>
+    <tr>
+        <td>PRE_SEX_M</td>
+        <td>Se "Sex" igual a "M" então 1 senão 0.</td>
+    </tr>
+    <tr>
+        <td>PRE_SEX_F</td>
+        <td>Se "Sex" igual a "F" então 1 senão 0.</td>
+    </tr>
+    <tr>
+        <td>PRE_CHEST_PAIN_TYPE_NAP</td>
+        <td>Se "ChestPainType" = "NAP" então 1 senão 0.</td>
+    </tr>
+    <tr>
+        <td>PRE_CHEST_PAIN_TYPE_ATA</td>
+        <td>Se "ChestPainType" = "ATA" então 1 senão 0.</td>
+    </tr>
+    <tr>
+        <td>PRE_CHEST_PAIN_TYPE_ASY</td>
+        <td>Se "ChestPainType" = "ASY" então 1 senão 0.</td>
+    </tr>
+    <tr>
+        <td>PRE_CHEST_PAIN_TYPE_TA</td>
+        <td>Se "ChestPainType" = "TA" então 1 senão 0.</td>
+    </tr>
+    <tr>
+        <td>PRE_RESTING_BP</td>
+        <td>Se "RestingBP" > 139 então 1 senão normalização linear (max = 139, min = 80).</td>
+    </tr>   
+    <tr>
+        <td>PRE_CHOLESTEROL_CAT</td>
+        <td>Se "Cholesterol" > 239 então 1 senão 0.</td>
+    </tr>  
+    <tr>
+        <td>PRE_CHOLESTEROL</td>
+        <td>Se "Cholesterol" > 239 então 1 senão normalização linear (max = 239, min = 85).</td>
+    </tr>
+    <tr>
+        <td>PRE_FASTING_BP</td>
+        <td>Valor da coluna "FastingBP" (1 se FastingBS > 120 mg/dL senão 0).</td>
+    </tr>
+    <tr>
+        <td>PRE_RESTING_ECG</td>
+        <td>Se "RestingECG" <> "Normal" entçao 0 senão 1.</td>
+    </tr>
+    <tr>
+        <td>PRE_MAX_HR_CAT</td>
+        <td>Se "MaxHR" > 128 então 1 senão 0.</td>
+    </tr>
+    <tr>
+        <td>PRE_MAX_HR</td>
+        <td>Se "MaxHR" > 128 então 1 senão normalização linear (max = 128, min = 60).</td>
+    </tr>
+    <tr>
+        <td>PRE_EXERCISE_ANGINA</td>
+        <td>Se "ExerciseAngina" = 'Y' então 1 senão 0.</td>
+    </tr>
+    <tr>
+        <td>PRE_OLDPEAK</td>
+        <td>Normalização linear (max = 6.2, min = -2).</td>
+    </tr>
+    <tr>
+        <td>PRE_ST_SLOPE</td>
+        <td>Se "Oldpeak" <> 'Flat' então 1 senão 0.</td>
     </tr>
 </table>
 
