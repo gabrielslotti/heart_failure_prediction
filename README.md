@@ -5,15 +5,24 @@
 
 <h3>Índice</h3>
 <p align="left">
- • <a href="#description">Descrição do trabalho</a></br>
+ • <a href="#business-ctx">Contexto de negócio</a></br>
  • <a href="#dataset-desc">Dataset</a></br>
  • <a href="#attr-desc">Descrição dos atributos do dataset</a></br>
- • <a href="#pre-process">Pré-processamento</a></br>
- • <a href="#citations">Citações</a>
+ • <a href="#pre-process">Pré-processamento das variáveis</a></br>
+ • <a href="#models">Modelos</a></br>
+ • <a href="#results">Avaliação de desempenho</a></br>
+ • <a href="#refs">Distribuição</a></br>
+ • <a href="#refs">Referências</a>
 </p>
 
-<h3 id="description">Descrição do trabalho</h3>
-<p>Este trabalho é parte do desenvolvimento da matéria de Computação Cognitiva pela Faculdade Impacta de Tecnologia, ministrada pelo professor Roberto Santos.</p>
+<h3 id="business-ctx">Contexto de negócio</h3>
+<p>"As doenças cardiovasculares são a principal causa de morte no mundo: mais pessoas morrem anualmente por essas enfermidades do que por qualquer outra causa.
+
+Estima-se que 17,9 milhões de pessoas morreram por doenças cardiovasculares em 2016, representando 31% de todas as mortes em nível global. Destes óbitos, estima-se que 85% ocorrem devido a ataques cardíacos e acidentes vasculares cerebrais (AVCs).
+
+Mais de três quartos das mortes por doenças cardiovasculares ocorrem em países de baixa e média renda.
+
+Das 17 milhões de mortes prematuras (pessoas com menos de 70 anos) por doenças crônicas não transmissíveis, 82% acontecem em países de baixa e média renda e 37% são causadas por doenças cardiovasculares" (OPAS/OMS).</p>
 
 <h3 id="dataset-desc">Dataset</h3>
 <p>Para a construção do modelo, foi utilizado o seguinte dataset disponível no Kaggle: <a href="https://www.kaggle.com/fedesoriano/heart-failure-prediction">Heart Failure Prediction Dataset</a>.</p>
@@ -87,7 +96,7 @@
     </tr>
 </table>
 
-<h3 id="pre-process">Pré-processamento</h3>
+<h3 id="pre-process">Pré-processamento das variáveis</h3>
 <table border="1">
     <tr>
         <td>Variável</td>
@@ -163,5 +172,16 @@
     </tr>
 </table>
 
-<h3 id="citations">Citações</h3>
-<p>1. fedesoriano. (September 2021). Heart Failure Prediction Dataset. Retrieved [Date Retrieved] from https://www.kaggle.com/fedesoriano/heart-failure-prediction.</p>
+<h3 id="models">Modelos</h3>
+<p>Para um melhor entendimento de qual seria o melhor algoritmo para elaboração do modelo, foram testado alguns algoritmos: Naive-Bayes, Decision Tree, RNA, Extra Trees, Baggin com Naive-Bayes e Bagging com Decision Tree.</p>
+<p>Todos os algoritmos utilizaram as mesmas variáveis pré-processadas.</p>
+
+<h3 id="results">Avaliação de desempenho</h3>
+<p></p>
+
+<h3 id="impl">Distribuição</h3>
+<p></p>
+
+<h3 id="refs">Referências</h3>
+<p>1. fedesoriano. (September 2021). Heart Failure Prediction Dataset. Disponível em: https://www.kaggle.com/fedesoriano/heart-failure-prediction. Acesso em: 21 de out. de 2021.</p>
+<p>2. Organização Pan-Americana da Saúde. Disponível em: https://www.paho.org/pt/topicos/doencas-cardiovasculares. Acesso em: 23 de nov. de 2021.</p>
