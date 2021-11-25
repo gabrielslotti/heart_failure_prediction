@@ -346,13 +346,17 @@ Das 17 milhões de mortes prematuras (pessoas com menos de 70 anos) por doenças
 2. O modelo Extra Trees obteve a maior precisão de negativos (91%).</br>
 3. O modelo Bagging com Naive-Bayes obeteve o melhor recall (82%) e f1-score de negativos (86%), e também a melhor precisão com positivos (86%) e melhor f1-score (89%) com positivos.</br>
 4. Os modelos Extra Trees e Random Forest obtiveram o melhor recall de positivos (94%).</br>
-5. O modelo Extra Tress obteve o menor MSE (11.71%).
+5. O modelo Extra Trees obteve o menor MSE (11.71%).
 </p>
 
 <p>Olhando de maneira genérica e considerando todas as métricas apresentadas, o modelo utilizando Bagging com Naive-Bayes se mostrou o melhor modelo para fazer a predição de doenças cardiovasculares.</p>
 
 <h3 id="impl">Distribuição</h3>
-<p></p>
+<p>O principal objetivo deste trabalho é auxiliar a criação de um modelo para predição de doenças cardiovasculares. A distribuição e implementação dos resultados da pesquisa podem se dar seguintes formas:</br>
+1. Utilização do modelo para auxiliar no diagnóstico junto a especialistas.</br>
+2. Automatização de gatilhos para alertar os pacientes da instituição de saúde.</br>
+3. Base para novas pesquisas e aprimoramentos nos modelos desenvolvidos.
+</p>
 
 <h3 id="refs">Referências</h3>
 <p>1. fedesoriano. (September 2021). Heart Failure Prediction Dataset. Disponível em: https://www.kaggle.com/fedesoriano/heart-failure-prediction. Acesso em: 21 de out. de 2021.</p>
