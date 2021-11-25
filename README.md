@@ -9,7 +9,7 @@
  • <a href="#dataset-desc">Dataset</a></br>
  • <a href="#attr-desc">Descrição dos atributos do dataset</a></br>
  • <a href="#pre-process">Pré-processamento das variáveis</a></br>
- • <a href="#models">Modelos</a></br>
+ • <a href="#models">Modelagem</a></br>
  • <a href="#results">Avaliação de desempenho</a></br>
  • <a href="#refs">Distribuição</a></br>
  • <a href="#refs">Referências</a>
@@ -172,12 +172,184 @@ Das 17 milhões de mortes prematuras (pessoas com menos de 70 anos) por doenças
     </tr>
 </table>
 
-<h3 id="models">Modelos</h3>
-<p>Para um melhor entendimento de qual seria o melhor algoritmo para elaboração do modelo, foram testado alguns algoritmos: Naive-Bayes, Decision Tree, RNA, Extra Trees, Baggin com Naive-Bayes e Bagging com Decision Tree.</p>
-<p>Todos os algoritmos utilizaram as mesmas variáveis pré-processadas.</p>
+<h3 id="models">Modelagem</h3>
+<p>Para um melhor entendimento de qual seria o melhor algoritmo para elaboração do modelo, foram testado alguns algoritmos: Naive-Bayes, Decision Tree, RNA, Extra Trees, Random Forest, Bagging com Naive-Bayes e Bagging com Decision Tree. Todos os algoritmos utilizaram as mesmas variáveis pré-processadas e o dataset foi dividido em 75% para treinamento e 25% para teste.</p>
+<img src="imgs/modeling1.png">
+<p>Para cada um dos algoritmos foi passado os seguintes parâmetros:</p>
+<img src="imgs/dtree-model.png">
+<img src="imgs/extra-trees-model.png">
+<img src="imgs/bagging-dtree-model.png">
+<img src="imgs/naive-bayes-model.png">
+<img src="imgs/bagging-nb-model.png">
+<img src="imgs/rna-model.png">
+<img src="imgs/random-forest-model.png">
 
 <h3 id="results">Avaliação de desempenho</h3>
-<p></p>
+<p>Para avaliação de desempenho de cada um dos modelos foi utilizado as funções classification_report e confusion_matrix do pacote de metrics do sklearn e cálculo do MSE.</p>
+<h4>Decision Tree</h4>
+<p>Relatório de classificação:</p>
+<img src="imgs/dtree-report.png">
+<p>Matriz de confusão:</p>
+<table border="1">
+    <tr>
+        <td></td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>83</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>17</td>
+        <td>110</td>
+    </tr>
+</table>
+<p>MSE: 16.08%</p>
+<h4>Extra Trees</h4>
+<p>Relatório de classificação:</p>
+<img src="imgs/dtree-report.png">
+<p>Matriz de confusão:</p>
+<table border="1">
+    <tr>
+        <td></td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>79</td>
+        <td>24</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>8</td>
+        <td>119</td>
+    </tr>
+</table>
+<p>MSE: 11.71%</p>
+<h4>Bagging com Decision Tree</h4>
+<p>Relatório de classificação:</p>
+<img src="imgs/bagging-dtree-report.png">
+<p>Matriz de confusão:</p>
+<table border="1">
+    <tr>
+        <td></td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>76</td>
+        <td>27</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>10</td>
+        <td>117</td>
+    </tr>
+</table>
+<p>MSE: 16.08%</p>
+<h4>Naive-Bayes</h4>
+<p>Relatório de classificação:</p>
+<img src="imgs/naive-bayes-report.png">
+<p>Matriz de confusão:</p>
+<table border="1">
+    <tr>
+        <td></td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>85</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>9</td>
+        <td>118</td>
+    </tr>
+</table>
+<p>MSE: 11.73%</p>
+<h4>Bagging com Naive-Bayes</h4>
+<p>Relatório de classificação:</p>
+<img src="imgs/bagging-nb-report.png">
+<p>Matriz de confusão:</p>
+<table border="1">
+    <tr>
+        <td></td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>84</td>
+        <td>19</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>9</td>
+        <td>118</td>
+    </tr>
+</table>
+<p>MSE: 12.17%</p>
+<h4>RNA</h4>
+<p>Relatório de classificação:</p>
+<img src="imgs/rna-report.png">
+<p>Matriz de confusão:</p>
+<table border="1">
+    <tr>
+        <td></td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>80</td>
+        <td>23</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>21</td>
+        <td>106</td>
+    </tr>
+</table>
+<p>MSE: 19.13%</p>
+<h4>Random Forest</h4>
+<p>Relatório de classificação:</p>
+<img src="imgs/random-forest-report.png">
+<p>Matriz de confusão:</p>
+<table border="1">
+    <tr>
+        <td></td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>73</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>8</td>
+        <td>119</td>
+    </tr>
+</table>
+<p>MSE: 16.52%</p>
+
+<p>A partir das informações acima conseguimos fazer as seguintes observações:</br>
+1. Os modelos Naive-Bayes e Bagging com Naive-Bayes obtiveram a maior acurácia (88%).</br>
+2. O modelo Extra Trees obteve a maior precisão de negativos (91%).</br>
+3. O modelo Bagging com Naive-Bayes obeteve o melhor recall (82%) e f1-score de negativos (86%), e também a melhor precisão com positivos (86%) e melhor f1-score (89%) com positivos.</br>
+4. Os modelos Extra Trees e Random Forest obtiveram o melhor recall de positivos (94%).</br>
+5. O modelo Extra Tress obteve o menor MSE (11.71%).
+</p>
+
+<p>Olhando de maneira genérica e considerando todas as métricas apresentadas, o modelo utilizando Bagging com Naive-Bayes se mostrou o melhor modelo para fazer a predição de doenças cardiovasculares.</p>
 
 <h3 id="impl">Distribuição</h3>
 <p></p>
