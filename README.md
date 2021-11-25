@@ -344,7 +344,7 @@ Das 17 milhões de mortes prematuras (pessoas com menos de 70 anos) por doenças
 <p>A partir das informações acima conseguimos fazer as seguintes observações:</br>
 1. Os modelos Naive-Bayes e Bagging com Naive-Bayes obtiveram a maior acurácia (88%).</br>
 2. O modelo Extra Trees obteve a maior precisão de negativos (91%).</br>
-3. O modelo Naive-Bayes obeteve o melhor recall (83%) e f1-score de negativos (86%), e também a melhor precisão com positivos (87%) e melhor f1-score (90%) com positivos.</br>
+3. O modelo Naive-Bayes obteve o melhor recall (83%) e f1-score de negativos (86%), e também a melhor precisão com positivos (87%) e melhor f1-score (90%) com positivos.</br>
 4. Os modelos Extra Trees e Random Forest obtiveram o melhor recall de positivos (94%).</br>
 5. O modelo Extra Trees obteve o menor MSE (11.71%).
 </p>
