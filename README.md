@@ -344,12 +344,12 @@ Das 17 milhões de mortes prematuras (pessoas com menos de 70 anos) por doenças
 <p>A partir das informações acima conseguimos fazer as seguintes observações:</br>
 1. Os modelos Naive-Bayes e Bagging com Naive-Bayes obtiveram a maior acurácia (88%).</br>
 2. O modelo Extra Trees obteve a maior precisão de negativos (91%).</br>
-3. O modelo Bagging com Naive-Bayes obeteve o melhor recall (82%) e f1-score de negativos (86%), e também a melhor precisão com positivos (86%) e melhor f1-score (89%) com positivos.</br>
+3. O modelo Naive-Bayes obeteve o melhor recall (83%) e f1-score de negativos (86%), e também a melhor precisão com positivos (87%) e melhor f1-score (90%) com positivos.</br>
 4. Os modelos Extra Trees e Random Forest obtiveram o melhor recall de positivos (94%).</br>
 5. O modelo Extra Trees obteve o menor MSE (11.71%).
 </p>
 
-<p>Olhando de maneira genérica e considerando todas as métricas apresentadas, o modelo utilizando Bagging com Naive-Bayes se mostrou o melhor modelo para fazer a predição de doenças cardiovasculares.</p>
+<p>Todos os modelos obtiveram resultados muito bons, mas o modelo escolhido pelo trabalho foi o que utilizou o algoritmo Naive-Bayes, pois ele foi um dos algoritmos com melhor acurácia (86%), segundo menor MSE (11.73%) e melhores métricas na predição de positivos.</p>
 
 <h3 id="impl">Distribuição</h3>
 <p>O principal objetivo deste trabalho é auxiliar a criação de um modelo para predição de doenças cardiovasculares. A distribuição e implementação dos resultados da pesquisa podem se dar seguintes formas:</br>
